@@ -1,0 +1,69 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 10px;
+   margin: 0;
+}
+
+.container {
+   height: 100vh;
+   max-height: 800px;
+   display: flex;
+   gap: 1rem;
+   padding: 3rem 2rem;
+}
+
+.card {
+   display: flex;
+   align-items: flex-end;
+   background-size: cover;
+   border-radius: 2rem;
+   overflow: hidden;
+   cursor: pointer;
+
+   flex: 0.5;
+   transition: flex 600ms ease-in;
+}
+
+.card1 {
+   background-image: url("./images/ales-krivec-Uszp5Gkg0AI-unsplash.jpg");
+}
+
+.card2 {
+   background-image: url("./images/ken-cheung-KonWFWUaAuk-unsplash.jpg");
+}
+
+.card3 {
+   background-image: url("./images/bailey-zindel-NRQV-hBF10M-unsplash.jpg");
+}
+
+.card4 {
+   background-image: url("./images/eberhard-grossgasteiger-cs0sK0gzqCU-unsplash.jpg");
+}
+
+.card5 {
+   background-image: url("./images/luca-bravo-zAjdgNXsMeg-unsplash.jpg");
+}
+
+.card-title {
+   width: 100%;
+   font-size: 1.2rem;
+   text-align: center;
+   color: #ffffff;
+   margin-bottom: 0;
+   opacity: 0;
+   padding: 1rem;
+   background-color: #0000004e;
+}
+
+.card.card-expand {
+   flex: 5;
+}
+
+.card.card-expand .card-title {
+   opacity: 1;
+   transition: opacity 300ms ease-in 400ms;
+}
